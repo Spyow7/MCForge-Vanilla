@@ -227,6 +227,7 @@ namespace MCForge.Levels.Textures
                             else
                                 cfg = cachecfg;
                             cfg.Replace("\r", "");*/
+
                             string cfg = GetCFG();
                             byte[] content = Encoding.UTF8.GetBytes(cfg);
                             textWriter.WriteLine("HTTP/1.1 200 OK");
