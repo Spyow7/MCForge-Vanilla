@@ -49,7 +49,7 @@ namespace MCForge.Commands
                 Group hey = Group.findPlayerGroup(split[0]);
                 oldgroupstr = hey.name;
             }
-            if (message.Split(' ').Length > 2) msgGave = message.Substring(message.IndexOf(' ', message.IndexOf(' ') + 1)); else msgGave = "Congratulations!";
+            if (message.Split(' ').Length > 2) msgGave = message.Substring(message.IndexOf(' ', message.IndexOf(' ') + 1)); else msgGave = "Congratulations on getting %2promoted%6! Keep up the goood work at EPICBUILD EASYRANK [Spyow7]!";
 
             if (newRank == null) { Player.SendMessage(p, "Could not find specified rank."); return; }
 
